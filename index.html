@@ -313,13 +313,13 @@ section[id]{scroll-margin-top:80px}
 (function(){
   if(!window.L) return;
   var paris=[48.8566,2.3522];
-  var map=L.map('zone-map',{scrollWheelZoom:false,zoomControl:true,attributionControl:true});
+  var map=L.map('zone-map',{scrollWheelZoom:false,zoomControl:true,attributionControl:true}).setView(paris,9);
+  map.fitBounds(L.latLng(paris).toBounds(62000));
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:15,attribution:'&copy; OpenStreetMap'}).addTo(map);
   var c=L.circle(paris,{radius:30000,color:'#A8714A',weight:2,fillColor:'#C99A74',fillOpacity:0.18}).addTo(map);
   L.circle(paris,{radius:5500,color:'#2E2D2A',weight:1.5,dashArray:'4 4',fill:false}).addTo(map);
   L.circleMarker(paris,{radius:7,color:'#FFFFFF',weight:2,fillColor:'#2E2D2A',fillOpacity:1}).addTo(map)
    .bindTooltip('ACASA PARIS',{permanent:true,direction:'top',offset:[0,-8],className:'zone-tip'});
-  map.fitBounds(c.getBounds(),{padding:[10,10]});
 })();
 </script>
 
