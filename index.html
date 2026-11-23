@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ACASA PARIS — Plomberie, peinture et petits travaux à Paris</title>
+<meta name="description" content="ACASA PARIS : petite plomberie, peinture, petite électricité et rénovation à Paris et proche banlieue. Tarifs clairs, devis gratuit, déplacement et stationnement inclus. 06 29 41 16 66.">
+<link rel="icon" type="image/png" href="/maison.png">
+<meta property="og:title" content="ACASA PARIS — Rénover • Embellir • Valoriser">
+<meta property="og:description" content="Petite plomberie, peinture et petits travaux à Paris. Devis gratuit.">
+<meta property="og:image" content="/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:#2E2D2A;background:#FFFFFF}
+a{color:#2E2D2A}a:hover{color:#8C5A36}
+*{box-sizing:border-box}
+</style>
+<style>
+html{scroll-behavior:smooth}
+section[id]{scroll-margin-top:80px}
+@media (max-width:720px){.span2{grid-column:auto !important}}
+
+.tarifs>input{position:absolute;opacity:0;pointer-events:none}
+.t-tabs{display:inline-flex;flex-wrap:wrap;gap:6px;padding:6px;border-radius:999px;background:#FFFFFF;border:1px solid #EAE2D8;margin-bottom:20px}
+.t-tabs label{cursor:pointer;padding:10px 20px;min-height:44px;box-sizing:border-box;display:inline-flex;align-items:center;border-radius:999px;font-weight:600;font-size:15px;color:#5C5852}
+#t-plomb:checked~.t-tabs label[for=t-plomb],#t-peint:checked~.t-tabs label[for=t-peint],#t-elec:checked~.t-tabs label[for=t-elec]{background:#2E2D2A;color:#FFFFFF}
+.tarifs>input:focus-visible~.t-tabs{outline:2px solid #8C5A36;outline-offset:3px}
+.t-panel{display:none}
+#t-plomb:checked~#p-plomb,#t-peint:checked~#p-peint,#t-elec:checked~#p-elec{display:block}
+.t-list{list-style:none;margin:0;padding:8px 28px;background:#FFFFFF;border-radius:20px}
+.t-list li{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 0;border-bottom:1px solid #EFE9E2}
+.t-list li:last-child{border-bottom:0}
+.t-list strong{display:block;font-size:17px;font-weight:600;color:#2E2D2A;margin-bottom:4px}
+.t-list span{display:block;font-size:14px;line-height:1.5;color:#5C5852}
+.t-list em{font-style:normal;font-family:'Cormorant Garamond',Georgia,serif;font-weight:700;font-size:26px;color:#8C5A36;white-space:nowrap}
+.t-inc{padding:16px 18px;border-radius:14px;background:#FFFFFF;border:1px solid #EAE2D8}
+.t-inc strong{display:block;font-size:15px;color:#2E2D2A}
+.t-inc span{display:block;font-size:13px;color:#5C5852;margin-top:2px}
+@media (max-width:560px){.t-list{padding:4px 18px}.t-list li{align-items:flex-start}.t-list em{font-size:22px}}
+</style>
+</head>
+<body>
+<div style="width: 100%; font-family: Inter, system-ui, sans-serif; color: #2E2D2A; background: #FFFFFF">
+
+<!-- EN-TÊTE -->
+<header style="position: sticky; top: 0; z-index: 10; background: #FFFFFF; color: #2E2D2A; border-bottom: 1px solid #EFE9E2">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+    <a href="#accueil" style="display: flex; align-items: baseline; gap: 8px; text-decoration: none; color: #2E2D2A">
+      <img src="/maison.png" alt="" style="width: 30px; height: auto; align-self: center">
+      <span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700; font-size: 24px; letter-spacing: 0.04em">ACASA</span>
+      <span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 14px; letter-spacing: 0.3em; color: #8C5A36">PARIS</span>
+    </a>
+    <nav aria-label="Navigation principale" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px; font-size: 15px; font-weight: 500">
+      <a href="#services" style="color: #2E2D2A; text-decoration: none">Services</a>
+      <a href="#methode" style="color: #2E2D2A; text-decoration: none">Méthode</a>
+      <a href="#tarifs" style="color: #2E2D2A; text-decoration: none">Tarifs</a>
+      <a href="#realisations" style="color: #2E2D2A; text-decoration: none">Réalisations</a>
+      <a href="#contact" style="color: #2E2D2A; text-decoration: none">Contact</a>
+      <a href="tel:+33629411666" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 18px; border-radius: 8px; background: #C99A74; color: #2E2D2A; text-decoration: none; font-weight: 600">
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"></path></svg>
+        06 29 41 16 66
+      </a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="accueil" style="background: #FFFFFF; color: #2E2D2A">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 80px 24px 96px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+    <div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+      <p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #8C5A36">Rénover • Embellir • Valoriser</p>
+      <h1 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700; font-size: clamp(2.5rem, 5vw, 4.25rem); line-height: 1.05; letter-spacing: -0.01em">Vos petits travaux à Paris, faits proprement et au juste prix.</h1>
+      <p style="margin: 0; max-width: 600px; font-size: 19px; line-height: 1.6; color: #5C5852">Dépannage, rénovation partielle ou complète : un seul interlocuteur, du premier appel à la fin du chantier. Pour votre logement, un bien à vendre ou à mettre en location.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 14px">
+        <a href="#contact" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 28px; border-radius: 8px; background: #C99A74; color: #2E2D2A; font-weight: 600; font-size: 17px; text-decoration: none">Demander un devis</a>
+        <a href="tel:+33629411666" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 28px; border-radius: 8px; border: 1.5px solid #2E2D2A; color: #2E2D2A; font-weight: 600; font-size: 17px; text-decoration: none">Appeler le 06 29 41 16 66</a>
+      </div>
+    </div>
+    <div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+      <div style="display: flex; align-items: center; justify-content: center; padding: 24px">
+        <img src="/logo.png" alt="Logo ACASA PARIS" style="width: 100%; max-width: 420px; height: auto">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ENGAGEMENTS -->
+<section aria-label="Nos engagements" style="background: #F7F2EC; border-bottom: 1px solid #EAE2D8">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 36px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px">
+    <div style="display: flex; gap: 14px; align-items: flex-start">
+      <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#A8714A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"></path></svg>
+      <div><p style="margin: 0 0 4px; font-weight: 600; font-size: 16px">Artisan qualifié</p><p style="margin: 0; font-size: 15px; line-height: 1.5; color: #5C5852">Plomberie et chauffage réalisés en direct, par un pro du métier.</p></div>
+    </div>
+    <div style="display: flex; gap: 14px; align-items: flex-start">
+      <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#A8714A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="7" width="15" height="10" rx="1"></rect><path d="M16 10h4l3 3v4h-7z"></path><circle cx="5.5" cy="18.5" r="1.5"></circle><circle cx="18.5" cy="18.5" r="1.5"></circle></svg>
+      <div><p style="margin: 0 0 4px; font-weight: 600; font-size: 16px">Déplacement et parking inclus</p><p style="margin: 0; font-size: 15px; line-height: 1.5; color: #5C5852">Aucun frais caché à Paris : vous n'avez qu'à ouvrir la porte.</p></div>
+    </div>
+    <div style="display: flex; gap: 14px; align-items: flex-start">
+      <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#A8714A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+      <div><p style="margin: 0 0 4px; font-weight: 600; font-size: 16px">Un seul interlocuteur</p><p style="margin: 0; font-size: 15px; line-height: 1.5; color: #5C5852">Je coordonne tout le chantier, même quand plusieurs corps de métier interviennent.</p></div>
+    </div>
+    <div style="display: flex; gap: 14px; align-items: flex-start">
+      <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#A8714A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+      <div><p style="margin: 0 0 4px; font-weight: 600; font-size: 16px">Devis gratuit</p><p style="margin: 0; font-size: 15px; line-height: 1.5; color: #5C5852">Tarifs dégressifs si vous regroupez plusieurs prestations.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px">
+  <div style="max-width: 720px; margin-bottom: 48px">
+    <p style="margin: 0 0 12px; font-size: 14px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #8C5A36">Services</p>
+    <h2 style="margin: 0 0 16px; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700; font-size: clamp(2.25rem, 4vw, 3.25rem); line-height: 1.05">Du petit dépannage à la rénovation complète</h2>
+    <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #5C5852">Des interventions rapides et soignées, à des tarifs justes, sans les prix abusifs des dépanneurs d'urgence parisiens.</p>
+  </div>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px">
+    <article class="span2" style="grid-column: span 2; min-width: 0; padding: 36px; border-radius: 16px; background: #2E2D2A; color: #FFFFFF; display: flex; flex-direction: column; gap: 14px">
+      <span style="align-self: flex-start; padding: 6px 12px; border-radius: 999px; background: #C99A74; color: #2E2D2A; font-size: 13px; font-weight: 600">Notre spécialité</span>
+      <h3 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700; font-size: 32px">Petite plomberie</h3>
+      <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #D8D2CA">Robinetterie, chasse d'eau et mécanisme WC, bonde et siphon, colonne de douche, meuble vasque. Une installation à moderniser ou un souci à régler : on sécurise et on remet tout en état de marche.</p>
+    </article>
+    <article style="padding: 32px; border-radius: 16px; background: #F7F2EC; display: flex; flex-direction: column; gap: 10px">
+      <h3 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700; font-size: 26px">Peinture et rafraîchissement</h3>
+      <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #5C5852">Murs, plafonds, portes, boiseries. Supports préparés avec soin pour un rendu lisse et durable.</p>
+    </article>
+    <article style="padding: 32px; border-radius: 16px; background: #F7F2EC; display: flex; flex-direction: column; gap: 10px">
+      <h3 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700; font-size: 26px">Petite électricité</h3>
+      <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #5C5852">Prises, interrupteurs, luminaires, ampoules LED, détecteurs de fumée.</p>
+    </article>
+    <article style="padding: 32px; border-radius: 16px; background: #F7F2EC; display: flex; flex-direction: column; gap: 10px">
+      <h3 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700; font-size: 26px">Sols</h3>
+      <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #5C5852">Pose de parquet flottant et de sol vinyle.</p>
+    </article>
+    <article style="padding: 32px; border-radius: 16px; background: #F7F2EC; display: flex; flex-direction: column; gap: 10px">
+      <h3 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700; font-size: 26px">Joints et finitions</h3>
+      <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #5C5852">Rénovation des joints de douche, baignoire et crédence. Fini le silicone moisi ou jauni.</p>
+    </article>
+  </div>
+</section>
+
+<!-- POUR QUI -->
+<section style="background: #F7F2EC">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px">
+    <div style="padding: 40px; border-radius: 12px; background: #FFFFFF; display: flex; flex-direction: column; gap: 16px">
+      <p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #8C5A36">Particuliers</p>
+      <h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700; font-size: 30px; line-height: 1.15">Améliorer, vendre ou louer votre bien</h2>
+      <ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.9; color: #5C5852">
+        <li>Améliorer le confort de votre logement</li>
+        <li>Préparer un bien avant sa mise en vente</li>
+        <li>Remettre un appartement en état avant une location</li>
+      </ul>
+    </div>
+    <div style="padding: 40px; border-radius: 12px; background: #FFFFFF; display: flex; flex-direction: column; gap: 16px">
+      <p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #8C5A36">Professionnels</p>
+      <h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700; font-size: 30px; line-height: 1.15">Agences, syndics et gestionnaires</h2>
+      <ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.9; color: #5C5852">
+        <li>Dépannages plomberie rapides pour vos locataires</li>
+        <li>Remises en état entre deux locations</li>
+        <li>Un contact unique et des devis clairs</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- MÉTHODE -->
+<section id="methode" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px">
+  <p style="margin: 0 0 12px; font-size: 14px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #8C5A36">Méthode</p>
+  <h2 style="margin: 0 0 48px; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700; font-size: clamp(2rem, 3.5vw, 2.75rem); line-height: 1.1">Comment se passe un chantier</h2>
+  <ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px">
+    <li style="display: flex; flex-direction: column; gap: 10px; padding-top: 20px; border-top: 3px solid #2E2D2A">
+      <span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700; font-size: 32px; color: #8C5A36">01</span>
+      <h3 style="margin: 0; font-size: 19px; font-weight: 600">Premier échange</h3>
+      <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #5C5852">Par téléphone ou e-mail, on parle de votre projet et de votre budget.</p>
+    </li>
+    <li style="display: flex; flex-direction: column; gap: 10px; padding-top: 20px; border-top: 3px solid #2E2D2A">
+      <span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700; font-size: 32px; color: #8C5A36">02</span>
+      <h3 style="margin: 0; font-size: 19px; font-weight: 600">Visite et devis</h3>
+      <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #5C5852">Je viens sur place et vous remets un devis détaillé.</p>
+    </li>
+    <li style="display: flex; flex-direction: column; gap: 10px; padding-top: 20px; border-top: 3px solid #2E2D2A">
+      <span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700; font-size: 32px; color: #8C5A36">03</span>
+      <h3 style="margin: 0; font-size: 19px; font-weight: 600">Travaux</h3>
+      <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #5C5852">Chantier propre, délais tenus, point régulier sur l'avancement.</p>
+    </li>
+    <li style="display: flex; flex-direction: column; gap: 10px; padding-top: 20px; border-top: 3px solid #2E2D2A">
+      <span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700; font-size: 32px; color: #8C5A36">04</span>
+      <h3 style="margin: 0; font-size: 19px; font-weight: 600">Réception</h3>
+      <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #5C5852">On vérifie ensemble les finitions avant de clôturer.</p>
+    </li>
+  </ol>
+</section>
+
+<!-- TARIFS -->
+<section id="tarifs" style="background: #F7F2EC">
+  <div style="max-width: 1000px; margin: 0 auto; padding: 96px 24px">
+    <p style="margin: 0 0 12px; font-size: 14px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #8C5A36">Tarifs</p>
+    <h2 style="margin: 0 0 16px; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700; font-size: clamp(2.25rem, 4vw, 3.25rem); line-height: 1.05">Des prix clairs, avant même de nous appeler</h2>
+    <p style="margin: 0 0 36px; max-width: 640px; font-size: 18px; line-height: 1.6; color: #5C5852">Voici nos tarifs les plus demandés. Le prix final est toujours confirmé par un devis gratuit, avant le début des travaux.</p>
+
+    <div class="tarifs">
+      <input type="radio" name="cat" id="t-plomb" checked>
+      <input type="radio" name="cat" id="t-peint">
+      <input type="radio" name="cat" id="t-elec">
+      <div class="t-tabs" role="tablist" aria-label="Catégories de tarifs">
+        <label for="t-plomb">Plomberie</label>
+        <label for="t-peint">Peinture &amp; sols</label>
+        <label for="t-elec">Électricité</label>
+      </div>
+
+            <div class="t-panel" id="p-plomb">
+        <ul class="t-list">
+          <li><div><strong>Changement de siphon</strong><span>Lavabo ou évier, siphon PVC fourni</span></div><em>89 €</em></li>
+          <li><div><strong>Pose d'un mitigeur</strong><span>Lavabo, évier ou douche : dépose de l'ancien, flexibles neufs</span></div><em>99 €</em></li>
+          <li><div><strong>Joints silicone douche ou baignoire</strong><span>Dépose de l'ancien joint, silicone sanitaire anti-moisissure</span></div><em>99 €</em></li>
+          <li><div><strong>Mécanisme de chasse d'eau</strong><span>WC classique, mécanisme standard fourni</span></div><em>119 €</em></li>
+          <li><div><strong>Pose d'une colonne de douche</strong><span>Dépose de l'ancienne colonne, pose et raccordement</span></div><em>129 €</em></li>
+          <li><div><strong>Pose d'un meuble vasque</strong><span>Montage, fixation et raccordements eau et évacuation</span></div><em>dès 189 €</em></li>
+        </ul>
+      </div>
+
+      <div class="t-panel" id="p-peint">
+        <ul class="t-list">
+          <li><div><strong>Pose de parquet flottant ou vinyle</strong><span>Pose clipsée sur sous-couche, plinthes en option</span></div><em>dès 25 €/m²</em></li>
+          <li><div><strong>Peinture d'une pièce (~12 m²)</strong><span>Murs et plafond, rebouchage, 2 couches, peinture blanche fournie</span></div><em>dès 790 €</em></li>
+        </ul>
+      </div>
+
+      <div class="t-panel" id="p-elec">
+        <ul class="t-list">
+          <li><div><strong>Remplacement d'une prise ou d'un interrupteur</strong><span>Appareillage standard fourni</span></div><em>59 €</em></li>
+          <li><div><strong>Détecteur de fumée</strong><span>Détecteur NF fourni, posé et testé</span></div><em>69 €</em></li>
+          <li><div><strong>Pose d'un luminaire</strong><span>Plafonnier, suspension ou applique</span></div><em>79 €</em></li>
+          <li><div><strong>Création d'une prise</strong><span>Sur un circuit existant, gaine et boîte comprises</span></div><em>dès 129 €</em></li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="margin-top: 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px">
+      <div class="t-inc"><strong>Déplacement inclus</strong><span>et stationnement à Paris</span></div>
+      <div class="t-inc"><strong>Chantier protégé</strong><span>et laissé propre</span></div>
+      <div class="t-inc"><strong>Devis gratuit</strong><span>prix confirmé avant travaux</span></div>
+      <div class="t-inc"><strong>Tarif dégressif</strong><span>dès 2 prestations</span></div>
+    </div>
+
+    <div style="margin-top: 36px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 24px 28px; border-radius: 16px; background: #2E2D2A; color: #FFFFFF">
+      <p style="margin: 0; font-size: 17px; line-height: 1.5">Un besoin qui n'est pas dans la liste ? <span style="color: #D8D2CA">On vous fait un devis sur mesure.</span></p>
+      <a href="#contact" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 999px; background: #C99A74; color: #2E2D2A; font-weight: 600; text-decoration: none; white-space: nowrap">Demander un devis</a>
+    </div>
+    <p style="margin: 16px 0 0; font-size: 13px; color: #5C5852">Prix TTC (TVA 10 % rénovation), main d'œuvre et déplacement compris. Prix confirmé par devis gratuit avant travaux.</p>
+  </div>
+</section>
+
+<!-- RÉALISATIONS -->
+<section id="realisations" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px">
+  <p style="margin: 0 0 12px; font-size: 14px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #8C5A36">Réalisations</p>
+  <h2 style="margin: 0 0 48px; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700; font-size: clamp(2.25rem, 4vw, 3.25rem); line-height: 1.05">Quelques chantiers récents</h2>
+  <div style="display: grid; grid-template-columns: minmax(0, 1fr); gap: 64px">
+    <figure style="margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 28px 40px">
+      <div style="flex: 2 1 520px; min-width: 0; padding: 20px; border-radius: 20px; background: #F7F2EC; display: flex; flex-direction: column; gap: 16px">
+        <div aria-hidden="true" style="display: flex; align-items: center; gap: 16px"><span style="font-size: 13px; font-weight: 600; letter-spacing: 0.22em; color: #2E2D2A">AVANT</span><span style="flex: 1 1 auto; height: 1px; background: #C99A74"></span><img src="/maison.png" alt="" style="width: 26px; height: auto"><span style="flex: 1 1 auto; height: 1px; background: #C99A74"></span><span style="font-size: 13px; font-weight: 600; letter-spacing: 0.22em; color: #2E2D2A">APRÈS</span></div>
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
+          <img src="/salle-eau-avant.jpg" alt="Avant : la salle d'eau" loading="lazy" width="640" height="800" style="width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 12px; display: block">
+          <img src="/salle-eau-apres.jpg" alt="Après : la salle d'eau" loading="lazy" width="640" height="800" style="width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 12px; display: block">
+        </div>
+      </div>
+      <figcaption style="flex: 1 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 10px"><strong style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 30px; line-height: 1.15; color: #2E2D2A">Rénovation complète d'une salle d'eau</strong><span style="font-size: 16px; line-height: 1.7; color: #5C5852">Dépose, plomberie, électricité, carrelage grand format, douche, meuble vasque suspendu et éclairage LED.</span></figcaption>
+    </figure>
+    <figure style="margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 28px 40px">
+      <div style="flex: 2 1 520px; min-width: 0; padding: 20px; border-radius: 20px; background: #F7F2EC; display: flex; flex-direction: column; gap: 16px">
+        <div aria-hidden="true" style="display: flex; align-items: center; gap: 16px"><span style="font-size: 13px; font-weight: 600; letter-spacing: 0.22em; color: #2E2D2A">AVANT</span><span style="flex: 1 1 auto; height: 1px; background: #C99A74"></span><img src="/maison.png" alt="" style="width: 26px; height: auto"><span style="flex: 1 1 auto; height: 1px; background: #C99A74"></span><span style="font-size: 13px; font-weight: 600; letter-spacing: 0.22em; color: #2E2D2A">APRÈS</span></div>
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
+          <img src="/couloir-avant.jpg" alt="Avant : le couloir" loading="lazy" width="640" height="800" style="width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 12px; display: block">
+          <img src="/couloir-apres.jpg" alt="Après : le couloir" loading="lazy" width="640" height="800" style="width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 12px; display: block">
+        </div>
+      </div>
+      <figcaption style="flex: 1 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 10px"><strong style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 30px; line-height: 1.15; color: #2E2D2A">Un couloir modernisé</strong><span style="font-size: 15px; line-height: 1.6; color: #5C5852">Rebouchage, ponçage, puis peinture professionnelle des murs, portes et boiseries. Plus clair et plus spacieux.</span></figcaption>
+    </figure>
+    <figure style="margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 28px 40px">
+      <div style="flex: 2 1 520px; min-width: 0; padding: 20px; border-radius: 20px; background: #F7F2EC; display: flex; flex-direction: column; gap: 16px">
+        <div aria-hidden="true" style="display: flex; align-items: center; gap: 16px"><span style="font-size: 13px; font-weight: 600; letter-spacing: 0.22em; color: #2E2D2A">AVANT</span><span style="flex: 1 1 auto; height: 1px; background: #C99A74"></span><img src="/maison.png" alt="" style="width: 26px; height: auto"><span style="flex: 1 1 auto; height: 1px; background: #C99A74"></span><span style="font-size: 13px; font-weight: 600; letter-spacing: 0.22em; color: #2E2D2A">APRÈS</span></div>
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
+          <img src="/cuisine-avant.jpg" alt="Avant : la cuisine" loading="lazy" width="640" height="800" style="width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 12px; display: block">
+          <img src="/cuisine-apres.jpg" alt="Après : la cuisine" loading="lazy" width="640" height="800" style="width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 12px; display: block">
+        </div>
+      </div>
+      <figcaption style="flex: 1 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 10px"><strong style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 30px; line-height: 1.15; color: #2E2D2A">Une cuisine après un dégât des eaux</strong><span style="font-size: 15px; line-height: 1.6; color: #5C5852">Réparation du mur abîmé et peinture en teintes claires pour une cuisine plus lumineuse.</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ZONE -->
+<section style="background: #F7F2EC">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px; display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between">
+    <div style="flex: 1 1 520px; min-width: 0">
+      <p style="margin: 0 0 12px; font-size: 14px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #8C5A36">Zone d'intervention</p>
+      <h2 style="margin: 0 0 16px; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700; font-size: 40px; line-height: 1.1">Paris et proche banlieue</h2>
+      <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #5C5852">Déplacement, recherche de stationnement et frais de parking à notre charge. Vous n'avez qu'à ouvrir la porte.</p>
+    </div>
+    <a href="tel:+33629411666" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 28px; border-radius: 999px; background: #2E2D2A; color: #FFFFFF; font-weight: 600; text-decoration: none">Votre commune est-elle couverte ? Appelez-nous</a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-wrap: wrap; gap: 56px">
+  <div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+    <p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #8C5A36">Contact</p>
+    <h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700; font-size: clamp(2rem, 3.5vw, 2.75rem); line-height: 1.1">Un projet en tête ?<br>Parlons-en.</h2>
+    <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #5C5852">Quelques mots sur vos travaux suffisent. Je vous rappelle pour en discuter et caler une visite.</p>
+    <a href="tel:+33629411666" style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700; font-size: 30px; color: #2E2D2A; text-decoration: none">06 29 41 16 66</a>
+    <a href="mailto:acasabtp@gmail.com" style="font-size: 18px; font-weight: 500">acasabtp@gmail.com</a>
+    <a href="https://wa.me/33629411666" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border-radius: 8px; border: 1.5px solid #2E2D2A; color: #2E2D2A; font-weight: 600; text-decoration: none">Écrire sur WhatsApp</a>
+  </div>
+  <form name="contact" method="POST" action="/merci" data-netlify="true" netlify-honeypot="bot-field" style="flex: 1.4 1 480px; min-width: 0; padding: 40px; border-radius: 20px; background: #FBF3EC; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px">
+    <input type="hidden" name="subject" value="Nouvelle demande de devis — site ACASA PARIS">
+    <p hidden><label>Ne pas remplir : <input name="bot-field"></label></p>
+    <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">Nom
+      <input type="text" name="nom" required autocomplete="name" style="min-height: 48px; padding: 0 14px; border-radius: 10px; border: 1px solid #E2C3A8; background: #FFFFFF; font: inherit; font-weight: 400; font-size: 16px">
+    </label>
+    <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">Téléphone
+      <input type="tel" name="telephone" required autocomplete="tel" style="min-height: 48px; padding: 0 14px; border-radius: 10px; border: 1px solid #E2C3A8; background: #FFFFFF; font: inherit; font-weight: 400; font-size: 16px">
+    </label>
+    <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">E-mail
+      <input type="email" name="email" autocomplete="email" style="min-height: 48px; padding: 0 14px; border-radius: 10px; border: 1px solid #E2C3A8; background: #FFFFFF; font: inherit; font-weight: 400; font-size: 16px">
+    </label>
+    <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">Type de travaux
+      <select name="travaux" style="min-height: 48px; padding: 0 14px; border-radius: 10px; border: 1px solid #E2C3A8; background: #FFFFFF; font: inherit; font-weight: 400; font-size: 16px; background: #FFFFFF">
+        <option>Plomberie / chauffage</option>
+        <option>Peinture</option>
+        <option>Électricité</option>
+        <option>Sols / carrelage</option>
+        <option>Rénovation complète</option>
+        <option>Autre</option>
+      </select>
+    </label>
+    <label style="grid-column: 1 / -1; display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">Votre projet
+      <textarea name="message" required rows="5" style="padding: 12px 14px; border-radius: 10px; border: 1px solid #E2C3A8; background: #FFFFFF; font: inherit; font-weight: 400; font-size: 16px; resize: vertical"></textarea>
+    </label>
+    <button type="submit" style="grid-column: 1 / -1; min-height: 54px; border: 0; border-radius: 999px; background: #2E2D2A; color: #FFFFFF; font: inherit; font-weight: 600; font-size: 17px; cursor: pointer">Envoyer ma demande</button>
+    <p style="grid-column: 1 / -1; margin: 0; text-align: center; font-size: 14px; color: #8A5A36">Sans engagement. Vos coordonnées servent uniquement à vous recontacter.</p>
+  </form>
+</section>
+
+<!-- PIED DE PAGE -->
+<footer style="background: #2E2D2A; color: #D8D2CA">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 48px 24px; display: flex; flex-wrap: wrap; gap: 32px; justify-content: space-between">
+    <div style="display: flex; flex-direction: column; gap: 8px">
+      <span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700; font-size: 22px; color: #FFFFFF; letter-spacing: 0.04em">ACASA <span style="font-weight: 500; font-size: 13px; letter-spacing: 0.3em; color: #C99A74">PARIS</span></span>
+      <span style="font-size: 14px">Rénover • Embellir • Valoriser</span>
+    </div>
+    <div style="font-size: 13px; line-height: 1.8; max-width: 560px"><strong style="color: rgb(255, 255, 255)">Mentions légales</strong><br>
+      ACASA Paris, SASU au capital de 1 500 € — RCS Paris 108 557 414 — SIRET 108 557 414 00019<br>
+      Siège social : 75018 Paris<br><br></div>
+  </div>
+</footer>
+
+</div>
+</body>
+</html>
